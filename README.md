@@ -7,26 +7,26 @@ Straightforward Vue.js directive to get, in 4 steps, [Google sigIn](https://deve
 1.  Install it
 
 ```javascript
-	 npm install --save google-oauth-vue-directive
+  npm install --save google-oauth-vue-directive
 ```
 
 2.  Import the directive into your Vue component.
 
 ```javascript
-	 <template>
-		 {...}
-	 </template>
-	 <script>
-		 import { googleOauth } from 'google-oauth-vue-directive'
+<template>
+  {...}
+</template>
+<script>
+  import { googleOauth } from 'google-oauth-vue-directive'
 
-		 export default {
-			 ...,
-			 directives: {
-			   googleOauth
-			 },
-			 ...
-		 }
-	 </script>
+  export default {
+    ...,
+    directives: {
+      googleOauth
+    },
+    ...
+  }
+</script>
 ```
 
 If you are using [Nuxt](https://nuxtjs.org/), use it as follow in your `nuxt.config.js`
