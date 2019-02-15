@@ -1,0 +1,32 @@
+{
+  "name": "google-oauth-vue-directive",
+  "version": "1.0.0",
+  "description": "Straightforward Vue.js directive to get, in 4 steps, into your website",
+  "main": "google-oauth.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edd1721/google-oauth-vue-directive.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-google",
+    "vue-auth",
+    "vue-oauth",
+    "nuxt",
+    "nuxt-google",
+    "nuxt-auth",
+    "nuxt-oauth",
+    "google-oauth",
+    "google",
+    "oauth",
+    "google-auth",
+    "auth",
+    "authentication"
+  ],
+  "author": "Edward S. Ramos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Edd1721/google-oauth-vue-directive/issues"
+  },
+  "homepage": "https://github.com/Edd1721/google-oauth-vue-directive#readme"
+}
