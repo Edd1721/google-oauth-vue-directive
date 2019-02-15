@@ -12,7 +12,7 @@ Straightforward Vue.js directive to get, in 4 steps, [Google sigIn](https://deve
 
 2.  Import the directive into your Vue component.
 
-```javascript
+```html
 <template>
   {...}
 </template>
@@ -41,7 +41,7 @@ If you are using [Nuxt](https://nuxtjs.org/), use it as follow in your `nuxt.con
 
 3.  Create method **onGoogleAuthSuccess** and **onGoogleAuthError**.
 
-```javascript
+```html
   <template>
     {...}
   </template>
@@ -70,7 +70,7 @@ If you are using [Nuxt](https://nuxtjs.org/), use it as follow in your `nuxt.con
 
 4.  Use the directive **v-google-oauth="clientId"** in your HTML tag.
 
-```javascript
+```html
  <template>
    ...
    <button  v-google-oauth="clientId"  class="button">SigIn with Google</button>
