@@ -93,3 +93,7 @@ If you are using [Nuxt](https://nuxtjs.org/), use it as follow in your `nuxt.con
    }
  </script>
 ```
+
+## License
+
+MIT © Edward S. Ramos
