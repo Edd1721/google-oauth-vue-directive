@@ -1,6 +1,3 @@
-
-import Vue from 'vue'
-
 function validateOauthMethods (vnode) {
   if (!vnode.context.onGoogleAuthSuccess) {
     throw new Error('Method onGoogleAuthSuccess must be defined on component')
@@ -21,7 +18,7 @@ function loadOauthScript (vnode, clientId) {
   scriptEl.onload = initScript
 
   function initScript () {
-    gapi.load('auth2', () => {
+    gapi.load('auth2', function gapiLoad () {
       const params = {
         client_id: clientId,
         cookiepolicy: 'single_host_origin'
@@ -32,11 +29,9 @@ function loadOauthScript (vnode, clientId) {
         .catch(err => vnode.context.onGoogleAuthError(err))
     })
   }
-
-  return scriptEl
 }
 
-export const googleOauth = {
+const googleOauth = {
   bind: function (el, binding, vnode) {
     validateOauthMethods(vnode)
 
@@ -47,4 +42,4 @@ export const googleOauth = {
   }
 }
 
-Vue.directive('google-oauth', googleOauth)
+module.exports = googleOauth

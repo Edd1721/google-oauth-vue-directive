@@ -17,7 +17,7 @@ Straightforward Vue.js directive to get, in 4 steps, [Google sigIn](https://deve
   {...}
 </template>
 <script>
-  import { googleOauth } from 'google-oauth-vue-directive'
+  import googleOauth from 'google-oauth-vue-directive'
 
   export default {
     ...,
@@ -29,16 +29,6 @@ Straightforward Vue.js directive to get, in 4 steps, [Google sigIn](https://deve
 </script>
 ```
 
-If you are using [Nuxt](https://nuxtjs.org/), use it as follow in your `nuxt.config.js`
-
-```javascript
-{
-  modules: [
-    'google-oauth-vue-directive'
-  ]
-}
-```
-
 3.  Create method **onGoogleAuthSuccess** and **onGoogleAuthError**.
 
 ```html
@@ -46,7 +36,7 @@ If you are using [Nuxt](https://nuxtjs.org/), use it as follow in your `nuxt.con
     {...}
   </template>
   <script>
-    import { googleOauth } from 'google-oauth-vue-directive'
+    import googleOauth from 'google-oauth-vue-directive'
 
     export default {
       ...,
@@ -77,7 +67,7 @@ If you are using [Nuxt](https://nuxtjs.org/), use it as follow in your `nuxt.con
    ...
  </template>
  <script>
-   import { googleOauth } from 'google-oauth-vue-directive'
+   import googleOauth from 'google-oauth-vue-directive'
 
    export default {
      ...,
