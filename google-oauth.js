@@ -1,10 +1,10 @@
 function validateOauthMethods (vnode) {
   if (!vnode.context.onGoogleAuthSuccess) {
-    throw new Error('Method onGoogleAuthSuccess must be defined on component')
+    throw new Error(`Method onGoogleAuthSuccess must be defined on ${vnode.context._name} component`)
   }
 
   if (!vnode.context.onGoogleAuthError) {
-    throw new Error('Method onGoogleAuthError must be defined on component')
+    throw new Error(`Method onGoogleAuthError must be defined on ${vnode.context._name} component`)
   }
 }
 
